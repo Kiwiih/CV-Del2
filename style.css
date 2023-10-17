@@ -1,0 +1,69 @@
+
+/* Main section - project site */
+.image-card{
+    background-color: #f9dcc4;
+    flex-basis: 30em;
+    max-width: 80vh;
+    overflow: visible; 
+    flex-grow: 0;
+}
+
+.project-description{
+    font-size: large;
+    float: right;
+    width: 40%;
+    align-items: center;
+}
+
+.img-portfolio{
+    float: left;
+    width: 60%;
+    border: 0.3em solid #fda393;
+}
+
+.project-link:hover{
+    color: #fda393;
+}
+/* END of main section - Project site */
+
+/* START OF RESUME */
+.resume-section{
+margin: auto;
+background-color: #f9dcc4;
+box-shadow: 2px 5px 5px rgb(85, 85, 85);   
+max-width: 100vh;
+font-family:"Brush Script MT", cursive;
+padding: 2em;
+max-width: 100vh;
+border-radius: 5%;
+}
+
+.cv-headline{
+margin: auto;
+max-width: 100vh; 
+text-align: center;
+padding-bottom: 1em;
+}
+/* END OF RESUME */
+/* Contact page - main */
+.contact-img{
+    width: 40%;
+    float: left;
+    border-radius: 50%;
+    opacity: 80%;
+    border: 0.5em solid #fbc4ab;
+}
+.contact-card{
+    text-align: left;
+    line-height: 3em;
+    border-radius: 10%;
+    height: 80vh;
+}
+@media (max-width: 450px) {
+    .contact-img{
+        display: none;
+    }
+    .contact-card{
+        text-align: center;
+    }
+}

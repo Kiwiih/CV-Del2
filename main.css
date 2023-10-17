@@ -1,0 +1,196 @@
+*{
+    margin: 0px;      
+    box-sizing: border-box;  
+}
+body{
+    background-image: url(https://free-images.com/lg/d541/forest_nature_morning_in.jpg);   
+    background-size: cover;
+    background-attachment: fixed;     
+}
+ /* NAVIGATION AND HEADER */
+.header-container {
+    display: flex;
+    background-color: #ffb5a7;
+    justify-content: space-between;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1em;
+    align-items: center; 
+    font-size: 1.2rem;
+}
+h1{
+    padding-left: 1.2em;
+}
+
+.nav-box{
+    display: flex;
+    list-style: none;
+    background-color: #ffb5a7;        
+}
+ .a-nav:hover{
+    color: #f9dcc4;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.active {
+    color: #f9dcc4;
+    padding-right: 15px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+.a-nav{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+/* END OF NAVIGATION AND HEADER */
+main{
+    padding: 2em 3em 1em 3em;
+}
+.primary-card-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.primary-card{  
+    background-color: #f9dcc4;
+    flex-grow: 1; 
+    flex-basis: 40em;
+    align-self: stretch;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 2px 5px 5px rgb(85, 85, 85);  
+    max-width: 100vh;
+    max-height: 50vh;
+    overflow: hidden;
+    font-family:"Brush Script MT", cursive;
+  }  
+
+img{     
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+ }   
+
+.primary-card-button {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+ }
+.resume-link:hover{
+    color: rgb(87, 86, 86);
+}
+
+.secondary-card-headline{
+    font-size: 2rem;
+    margin: 1.2rem; 
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;   
+}
+.card {
+    margin: 1em;
+  } 
+
+.secondary-card-section{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap; 
+}
+.secondary-card{
+    background-position: center;
+    background-size: cover;
+    border: solid 0.2em #fcd5ce;
+    box-shadow: 2px 5px 5px rgb(85, 85, 85);  
+    width: 40vh;
+    height: 50vh;
+    overflow: hidden;
+} 
+
+.project-button{
+    background-color: #f9dcc4;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    
+}
+
+.card-1{
+     background-image: url('images/cuteGhostHoldingBalloons.jpg');    
+}   
+.card-2{
+    background-image: url('images/small-ghosts.jpg');
+}
+.card-3{
+    background-image: url('images/ghosts-doing-housework.jpg');
+}
+.card-4{
+    background-image: url('images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
+}
+
+.footer-container {
+    display: flex;
+    background-color: #fbc4ab;
+    font-family:"Brush Script MT", cursive;
+    flex-wrap: wrap;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+/* MOBILE ADJUSTMENT */
+@media (max-width: 800px) {
+main{
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+h1{
+    font-size: 2rem;
+}
+h2 .secondary-card-headline{
+    font-size: 1rem;
+ }
+
+ .header-container{
+    margin: auto; 
+} 
+.nav-box{
+    margin-top: 1rem;
+}
+
+ .primary-card-section {
+    display: flex;
+    flex-direction: column;   
+  }
+
+  .card{
+    margin: 0.3em;
+    flex-grow: 1;
+  }
+  .project-titles{
+    padding: 0em;
+    max-width: 3em;
+    display: flex;
+  }
+
+ .secondary-card{
+    max-width: 20vh;
+    max-height: 35vh; 
+    flex-grow: 1;
+ }
+ 
+
+ .project-button{
+    font-size: 0.8rem;
+ }
+
+footer{
+    gap: 1em;  
+}
+
+}
