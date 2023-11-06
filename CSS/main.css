@@ -121,16 +121,16 @@ img{
 }
 
 .card-1{
-     background-image: url('images/cuteGhostHoldingBalloons.jpg');    
+     background-image: url('../images/cuteGhostHoldingBalloons.jpg');    
 }   
 .card-2{
-    background-image: url('images/small-ghosts.jpg');
+    background-image: url('../images/small-ghosts.jpg');
 }
 .card-3{
-    background-image: url('images/ghosts-doing-housework.jpg');
+    background-image: url('../images/ghosts-doing-housework.jpg');
 }
 .card-4{
-    background-image: url('images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
+    background-image: url('../images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
 }
 
 .footer-container {
