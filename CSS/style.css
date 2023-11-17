@@ -29,13 +29,13 @@
 /* START OF RESUME */
 .resume-section{
 margin: auto;
+margin-bottom: 1.5em;
 background-color: #f9dcc4;
 box-shadow: 2px 5px 5px rgb(85, 85, 85);   
 max-width: 100vh;
 font-family:"Brush Script MT", cursive;
 padding: 2em;
 max-width: 100vh;
-border-radius: 5%;
 }
 
 .cv-headline{

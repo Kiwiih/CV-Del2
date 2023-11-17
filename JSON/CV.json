@@ -1,12 +1,14 @@
 [
     {
-        "category": "education",
+        "category": "Education",
+        "title0": "Utbildningar",
         "title1": "Östersunds Gymnasieskola, Samhällsvetenskap",
         "title2": "ChasAcademy Fullstack Javascript- Pågående"
 
     },
     {
-        "category": "workplaces",
+        "category": "Workplaces",
+        "title0": "Arbeten",
         "title1": "Svenska Kyrkan 25%-100%, september 2017 -  augusti 2018",
         "title2": "Circle K, Butiksbiträde,  september 2018 -  september 2019",
         "title3": "Webhelp inom uppdrag SJ kundtjänst - september 2019 -  mars 2020",
