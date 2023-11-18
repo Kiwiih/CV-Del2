@@ -33,13 +33,12 @@
     <!-- MAIN SECTION -->
     <main>
         <!-- popup pokemon och close knapp -->
+        <div class="random-img-section">
         <span class="popup-content" id="myPopup">
-        <div id="random-image-container">
-            <p>Din nya pokemon!</p>
-        </div>
+        <div id="random-image-container"></div>   
         <span class="close" id="close">&times;</span>
         </span>
-
+        </div>
     <!-- primary card section -->
      <section class="card primary-card-section">
 
@@ -55,13 +54,14 @@
             <br> </p>
             <p class="primary-card-button"> <u>Läs mer här </u>!</p>
         </a>
-        </div>
-            
+        </div>   
     </section>
+    
     <!-- Knapp för at starta popup -->
-    <button id="btn-1" onclick="generateRandomImage()">Klicka på mig!</button>
-    <button id="btn-2">Sen på mig!</button>
-   
+    <section class="random-img-section">
+    <button id="btn-1" class="random-picture-button">Klicka på mig!</button>
+    <button id="btn-2" class="random-picture-button">Sen på mig!</button>
+   </section>
 
     <!-- SEKTION 2 MED PROJEKTKORT -->
     <h2 class="secondary-card-headline"> Projekt </h2>

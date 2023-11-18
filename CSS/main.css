@@ -119,6 +119,22 @@ img{
     text-align: center;
     
 }
+.random-img-section{
+  text-align: center;  
+} 
+.random-picture-button{
+    border: none;
+    background-color: #f9dcc4;
+    padding: 0.5em;
+    font-family:"Brush Script MT", cursive;
+    box-shadow: 2px 5px 5px rgb(85, 85, 85);  
+    
+}
+.random-picture-button:hover{
+    background-color: #ffb5a7;
+    border: none;
+    font-weight: bold;
+}
 
 .card-1{
      background-image: url('../images/cuteGhostHoldingBalloons.jpg');    
@@ -137,26 +153,26 @@ img{
     display: none;
     position: fixed;
     z-index: 1;
-    margin-left: 50vh;
+    margin-left: 70vh;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    max-width: 35vh;
-    max-height: 35vh;
+    max-width: 55vh;
+    max-height: 55vh;
 }
-      
 #random-image-container{
-    display: block;
-
-    background-color: rgb(101, 193, 101);
-    border: 0.3vh solid #cfcfcf;
+    padding: 1em; 
+    background-color: #ffb5a7;
+    border: 0.3vh solid #ffffff;
 }      
 .close {
     color: #000000;
-    font-size: 4rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 1;
+    right: 1;
+    padding: 0.1em;
+    cursor: pointer;
 }
-
-
 .footer-container {
     display: flex;
     background-color: #fbc4ab;

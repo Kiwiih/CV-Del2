@@ -26,7 +26,7 @@ function generateRandomImage(){
     const imgSection = document.createElement('img');
     imgSection.src = getRandomImage;
     imageContainer.appendChild(imgSection);
-    popup.style.display = 'block';
+    popup.style.display = 'flex';
 }
 
 //Funktion för att kunna stänga popupen
@@ -41,5 +41,6 @@ const imageFolder = 'pokemonImg';
 const images = ['bulbasaur.png','charmander.png', 'fuecoco.png', 'totodile.png', 'pikachu.png', 'philly.png', 'psyduck.png', 'squirtle.png','jigglypuff.png', 'sprigatito.png'];
 const randomImg = images[Math.floor(Math.random()* images.length)];
 return `${imageFolder}/${randomImg}`;
+
 }
 });
