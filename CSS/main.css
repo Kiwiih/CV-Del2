@@ -124,14 +124,38 @@ img{
      background-image: url('../images/cuteGhostHoldingBalloons.jpg');    
 }   
 .card-2{
-    background-image: url('../images/small-ghosts.jpg');
+    background-image: url('../images/stenSaxPase.jpg');
 }
 .card-3{
-    background-image: url('../images/ghosts-doing-housework.jpg');
+    background-image: url('../images/rngSpel.jpg');
 }
 .card-4{
     background-image: url('../images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
 }
+
+.popup-content{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-left: 50vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 35vh;
+    max-height: 35vh;
+}
+      
+#random-image-container{
+    display: block;
+
+    background-color: rgb(101, 193, 101);
+    border: 0.3vh solid #cfcfcf;
+}      
+.close {
+    color: #000000;
+    font-size: 4rem;
+}
+
 
 .footer-container {
     display: flex;
