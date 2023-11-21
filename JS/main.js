@@ -11,9 +11,8 @@
 //  metataggar som titel och beskrivning och optimerade bilder för snabba laddningstider.
 
 document.addEventListener('DOMContentLoaded', function () {
-
+const imageContainer = document.getElementById('random-image-container');
 const btn1 = document.getElementById('btn-1');
-const darmodeBtn = document.getElementById('btn-2');
 const closeBtn = document.getElementById('close');
 const popup = document.getElementById('myPopup');
 
@@ -21,7 +20,6 @@ const popup = document.getElementById('myPopup');
 //Event-listeners för alla knappar
 btn1.addEventListener('click', generateRandomImage)
 closeBtn.addEventListener('click', closeRandomImage);
-darmodeBtn.addEventListener('click', returnDarkmode)
 
 //Generera en bild när man klickar på den länkade knappen
 function generateRandomImage(){
@@ -47,23 +45,6 @@ return `${imageFolder}/${randomImg}`;
 }
 });
 
-//Function för att aktivera darkmode, byta bakgrund och färger på allt
-function returnDarkmode(){
-    const headerContainer = document.getElementsByClassName('header-container');
-    const imageContainer = document.getElementById('random-image-container');
-    const navigationLinks = document.getElementsByClassName('a-nav');
-
-
-    const headerElement = headerContainer[0];
-    const navigationElement = navigationLinks[0,1,2];
-    document.body.style.backgroundImage = 'url("https://free-images.com/lg/89b4/forest_dark_time_nature.jpg")';
-    headerElement.style.backgroundColor = 'black';
-    navigationElement.style.backgroundColor = 'black';
-    navigationElement.style.color = 'white';
-
-
-
-}
 
 //Nån annan persons kod (https://codepen.io/ekeric13/pen/wKOwmg)
    var carousel = document.querySelector('.carousel');
