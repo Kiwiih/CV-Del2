@@ -30,15 +30,20 @@
     <!-- SLUT NAVBAR -->
     </header>   
 
-    <!-- MAIN SECTION -->
-    <main>
-        <!-- popup pokemon och close knapp -->
-        <div class="random-img-section">
-        <span class="popup-content" id="myPopup">
-        <div id="random-image-container"></div>   
-        <span class="close" id="close">&times;</span>
-        </span>
-        </div>
+<!-- MAIN SECTION -->
+<main>
+    <!-- popup pokemon och close knapp -->
+    <div class="random-img-section popup-content" id="myPopup">
+    <figure id="random-image-container"></figure>   
+    <div class="close" id="close">&times;</div>
+    </div>
+
+    <!-- Knapp för at starta popup eller byta till darkmode -->
+    <section class="random-img-section">
+    <button id="btn-1" class="random-picture-button">Klicka på mig!</button>
+    <button id="btn-2" class="random-picture-button">DARKMODE</button>
+    </section>
+    
     <!-- primary card section -->
      <section class="card primary-card-section">
 
@@ -57,29 +62,51 @@
         </div>   
     </section>
     
-    <!-- Knapp för at starta popup -->
-    <section class="random-img-section">
-    <button id="btn-1" class="random-picture-button">Klicka på mig!</button>
-    <button id="btn-2" class="random-picture-button">Sen på mig!</button>
-   </section>
-
     <!-- SEKTION 2 MED PROJEKTKORT -->
     <h2 class="secondary-card-headline"> Projekt </h2>
-    <section class="card secondary-card-section">   
-            <a class="card secondary-card card-1" href="projects.html">
-                    <h3 class="project-button">Promenerande spöken <br>Klicka <u>här!</u></h3>
-            </a>
-            <a class="card secondary-card card-2" href="projects.html">
+        
+      
+<section class="card secondary-card-section"> 
+ <div class="carousel">
+    <div class="nav nav-left">
+        <div class="ion-chevron-left carousel-arrow-icon-left"></div>
+      </div>
+     
+        <div class="carousel-content">
+
+          <div class="slide card secondary-card card-1">
+            <a href="projects.html">
                 <h3 class="project-button">Sten Sax Påse <br>Klicka <u>här!</u></h3>
-            </a>         
-        <a class="card secondary-card card-3" href="projects.html">
+            </a>
+          </div>
+
+          <div class="slide card secondary-card card-2 ">
+            <a href="projects.html">
             <h3 class="project-button">Gissa numret spelet <br>Klicka <u>här!</u></h3>
-        </a>        
-        <a class="card secondary-card card-4" href="projects.html">
+            </a> 
+          </div>
+
+          <div class="slide card secondary-card card-3">
+            <a href="projects.html">
             <h3 class="project-button">Fiskande spöken <br>Klicka <u>här!</u></h3>
         </a> 
-    </section>   
-    </main>
+          </div>
+
+          <div class="slide card secondary-card card-4">
+            <a href="projects.html">
+                    <h3 class="project-button">Promenerande spöken <br>Klicka <u>här!</u></h3>
+            </a>
+          </div>    
+        </div>
+
+      <div class="nav nav-right">
+        <div class="ion-chevron-right carousel-arrow-icon-right"></div>
+      </div>
+
+    </div>
+</section>
+
+</main>
 
 <!-- FOOTER MEN LÄNKAR OCH IKONER-->
     

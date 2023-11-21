@@ -67,7 +67,7 @@ main{
     text-align: center;
     padding: 1%;
     box-shadow: 2px 5px 5px rgb(85, 85, 85);  
-    max-width: 100vh;
+    max-width: 85vh;
     max-height: 50vh;
     overflow: hidden;
     font-family:"Brush Script MT", cursive;
@@ -99,18 +99,14 @@ img{
   } 
 
 .secondary-card-section{
-    display: flex;
+    display: flex; 
     justify-content:space-between;
     flex-wrap: wrap; 
 }
 .secondary-card{
-    background-position: center;
+    background-position: center; 
     background-size: cover;
     border: solid 0.2em #fcd5ce;
-    box-shadow: 2px 5px 5px rgb(85, 85, 85);  
-    width: 40vh;
-    height: 50vh;
-    overflow: hidden;
 } 
 
 .project-button{
@@ -151,7 +147,7 @@ img{
 
 .popup-content{
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     margin-left: 70vh;
     width: 100%;
@@ -183,6 +179,70 @@ img{
     justify-content: space-evenly;
     
 }
+
+h2{
+    text-align: center;
+}
+
+/* Någon annans kod (https://codepen.io/ekeric13/pen/wKOwmg) (redigerad av mig)*/
+.carousel {
+  position: relative;
+  width: 50vh;
+  height: 50vh; 
+  margin: 0 auto;
+}
+
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+  background-position: center; 
+  background-size: cover;
+  border: solid 0.2em #fcd5ce;
+  margin: 1em;
+} 
+
+.nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.nav-left {
+  left: -2vh;
+}
+
+.nav-right {
+  right: -2vh;
+}
+
+.carousel-arrow-icon-left {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.carousel-arrow-icon-right {
+  margin-left: 7px;
+  margin-top: 2px;
+} 
+ /*Slutet på någon annans kod*/
+
 
 /* MOBILE ADJUSTMENT */
 @media (max-width: 800px) {
