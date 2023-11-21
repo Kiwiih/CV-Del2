@@ -1,10 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
-const darkmodeBtn = document.getElementById('btn-2');
+const darkmodeOnBtn = document.getElementById('darkmode-on-btn');
+const darkmodeOffBtn = document.getElementById('darkmode-off-btn');
 
-darkmodeBtn.addEventListener('click', returnDarkmode)
+darkmodeOnBtn.addEventListener('click', activeDarkmode);
+darkmodeOffBtn.addEventListener('click',  darkModeOff);
+
+//Funktion för att stänga av dark-mode
+function darkModeOff() {
+    location.reload();
+}
 
 //Function för att aktivera darkmode, byta bakgrund och färger på allt
-function returnDarkmode() {
+function activeDarkmode() {
     const headerContainer = document.getElementsByClassName('header-container');
     const h1 = document.getElementsByClassName('h1');
     const navigationLinks = document.getElementsByClassName('a-nav');
@@ -12,6 +18,8 @@ function returnDarkmode() {
     const primaryInfoCards = document.getElementsByClassName('primary-card');
     const footerContainer = document.getElementsByClassName('footer-container');
     const buttons = document.getElementsByClassName('button');
+    const projectText = document.getElementsByClassName('project-button');
+    const secondHeadline = document.getElementsByClassName('secondary-card-headline');
 
     const headerElement = headerContainer[0];
     const h1Element = h1[0];
@@ -20,6 +28,8 @@ function returnDarkmode() {
     const cardElements = Array.from(primaryInfoCards);
     const footerElements = footerContainer[0];
     const buttonElements = Array.from(buttons); 
+    const projectTextElements = Array.from(projectText);
+    const secondHeadlineElement= secondHeadline[0];
     
 
     h1Element.style.color = '#4f772d';
@@ -28,6 +38,7 @@ function returnDarkmode() {
     footerElements.style.backgroundColor = '#2d221c';
     activeNavElement.style.backgroundColor= '#2d221c';
     activeNavElement.style.color = '#4f772d';
+    secondHeadlineElement.style.color = '#4f772d';
 
     // Itterera över navigation links and lägga till styles
     navigationElements.forEach(function(link) {
@@ -43,5 +54,10 @@ function returnDarkmode() {
         card.style.backgroundColor = '#4f772d';
         card.style.color = 'white';
     });
+    projectTextElements.forEach(function(text) {
+        text.style.backgroundColor = '#2d221c';
+        text.style.color = 'white';
+
+    });
+
 }
-});

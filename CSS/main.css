@@ -109,13 +109,16 @@ img{
 .secondary-card{
     background-position: center; 
     background-size: cover;
-    border: solid 0.2em #fcd5ce;
 } 
 
 .project-button{
-    background-color: #f9dcc4;
+    background-color: #f9dcc4; 
     font-family: 'Indie Flower', cursive;
     text-align: center;
+    height: 8vh;
+    font-size: 0.8rem;
+    padding: 0.1em;
+    border: solid white 0.1em;
     
 }
 .random-img-section{
@@ -136,16 +139,20 @@ img{
 }
 
 .card-1{
-     background-image: url('../images/cuteGhostHoldingBalloons.jpg');    
+     background-image: url('../images/stenSaxPase.jpg');
+     padding: 1em;    
 }   
 .card-2{
-    background-image: url('../images/stenSaxPase.jpg');
+    background-image: url('../images/rngSpel.jpg');
+    padding: 1em; 
 }
 .card-3{
-    background-image: url('../images/rngSpel.jpg');
+    background-image: url('../images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
+    padding: 1em; 
 }
 .card-4{
-    background-image: url('../images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
+    background-image: url('../images/cuteGhostHoldingBalloons.jpg');
+    padding: 1em; 
 }
 
 .popup-content{
@@ -203,36 +210,38 @@ h2{
 }
 
 .slide {
-  height: 100%;
+  height: 45vh;
   position: absolute;
   z-index: 1;
   transition: left .4s cubic-bezier(.47,.13,.15,.89);
   background-position: center; 
   background-size: cover;
-  border: solid 0.2em #fcd5ce;
-  margin: 1em;
+  margin: 2vh;
+  border: solid white 0.1em;
+  
 } 
 
 .nav {
   position: absolute;
   top: 50%;
   margin-top: -10px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.3);
   width: 20px;
   height: 20px;
   z-index: 2;
   cursor: pointer;
   border-radius: 50%;
   border: none;
+  color: white;
   outline: none;
 }
 
 .nav-left {
-  left: -2vh;
+  left: -3vh;
 }
 
 .nav-right {
-  right: -2vh;
+  right: -3vh;
 }
 
 .carousel-arrow-icon-left {
