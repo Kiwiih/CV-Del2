@@ -38,7 +38,7 @@ function closeRandomImage(){
 }
 //Generera en random bild från en bild-mapp 
 function randomImage(){
-const imageFolder = 'pokemonImg';
+const imageFolder = './pokemonImg';
 const images = ['bulbasaur.png','charmander.png', 'fuecoco.png', 'totodile.png', 'pikachu.png', 'philly.png', 'psyduck.png', 'squirtle.png','jigglypuff.png', 'sprigatito.png'];
 const randomImg = images[Math.floor(Math.random()* images.length)];
 return `${imageFolder}/${randomImg}`;

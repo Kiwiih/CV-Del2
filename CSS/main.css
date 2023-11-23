@@ -30,14 +30,14 @@ h1{
     background-color: #ffb5a7;        
 }
  .a-nav:hover{
-    color: #f9dcc4;
+    color: #f7f4f1;
 }
 a{
     text-decoration: none;
     color: black;
 }
 .active {
-    color: #f9dcc4;
+    color: #f9f9f9;
     padding-right: 15px; 
     font-size: 20px;
     text-decoration: underline;
@@ -119,8 +119,9 @@ img{
     font-size: 0.8rem;
     padding: 0.1em;
     border: solid white 0.1em;
-    
 }
+
+/* RANDOM IMAGE SECTION */
 .random-img-section{
   text-align: center;  
 } 
@@ -138,33 +139,6 @@ img{
     font-weight: bold;
 }
 
-.card-1{
-     background-image: url('../images/stenSaxPase.jpg');
-     padding: 1em;    
-}   
-.card-2{
-    background-image: url('../images/rngSpel.jpg');
-    padding: 1em; 
-}
-.card-3{
-    background-image: url('../images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
-    padding: 1em; 
-}
-.card-4{
-    background-image: url('../images/cuteGhostHoldingBalloons.jpg');
-    padding: 1em; 
-}
-
-.popup-content{
-    display: none;
-    position: absolute;
-    z-index: 1;
-    margin-left: 70vh;
-    width: 100%;
-    height: 100%;
-    max-width: 55vh;
-    max-height: 55vh;
-}
 #random-image-container{
     padding: 1em; 
     background-color: #ffb5a7;
@@ -179,6 +153,35 @@ img{
     padding: 0.1em;
     cursor: pointer;
 }
+.popup-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 70vh;
+    width: 100%;
+    height: 100%;
+    max-width: 55vh;
+    max-height: 55vh;
+}
+
+/* END OF RANDOM IMAGE SECTION */
+h2{
+    text-align: center;
+}
+.card-1{
+    background-image: url('../images/stenSaxPase.jpg');
+   
+}   
+.card-2{
+    background-image: url('../images/rngSpel.jpg');
+}
+.card-3{
+    background-image: url('../images/two-small-ghosts-fishing-in-a-boat-on-a-lake-upscaled.jpg');
+}
+.card-4{
+    background-image: url('../images/cuteGhostHoldingBalloons.jpg');
+}
+
 .footer-container {
     display: flex;
     background-color: #fbc4ab;
@@ -190,9 +193,6 @@ img{
     
 }
 
-h2{
-    text-align: center;
-}
 
 /* Någon annans kod (https://codepen.io/ekeric13/pen/wKOwmg) (redigerad av mig)*/
 .carousel {
@@ -216,9 +216,9 @@ h2{
   transition: left .4s cubic-bezier(.47,.13,.15,.89);
   background-position: center; 
   background-size: cover;
-  margin: 2vh;
+  padding: 2vh;
   border: solid white 0.1em;
-  
+  width: 40%;
 } 
 
 .nav {
